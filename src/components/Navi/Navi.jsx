@@ -6,29 +6,8 @@ import github from "../../assets/github.png";
 
 function Navi() {
 
-    const [scrolled, setScrolled] = useState(false);
-
-    useEffect(
-        () => {
-            const handleScroll = () => {
-                if (window.scrollY > 50) {
-                    setScrolled(true);
-                } else {
-                    setScrolled(false);
-                }
-            };
-
-            window.addEventListener("scroll", handleScroll);
-
-            return (
-                () => {window.removeEventListener("scroll", handleScroll);}
-            );
-        }, 
-        []
-    );
-
     return (
-        <Navbar expand="lg" className={scrolled ? "scrolled" : "fixed-top"}>
+        <Navbar expand="lg" className={"fixed-top"}>
             <Container>
                 <Navbar.Brand href="/">
                     <h1 className="logo">Y U S E N</h1>
