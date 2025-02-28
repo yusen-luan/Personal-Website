@@ -34,15 +34,6 @@ html {
   z-index: 1000;
 }
 
-.scrolled{
-  position: fixed !important; 
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.85); 
-  transition: background-color 0.3s ease-in-out;
-  z-index: 1000; 
-}
-
 .me-auto{
   padding-top: 40px;
   padding-bottom: 20px;
